@@ -1,0 +1,70 @@
+$mainColor: royalblue;
+$mainBg: white;
+$textColor: black;
+// $mainBg: black;
+// $mainColor: #FFEC01;
+
+nav{
+    position: sticky;
+    z-index: 10000;
+    top: 0;
+    background-color: $mainBg;
+    user-select: none;
+    color: $mainColor;
+    max-width: 100%;
+    border-bottom: 2px solid $mainColor;
+    display: flex;
+    padding: 20px 10px;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 768px) {
+        flex-direction: column;
+        height: 100px;
+        justify-content: space-between;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+
+        .newsPaperLogo{
+            font-size: 18px;
+            width: 25px;
+        }
+        h1{
+            margin-left: 5px;
+            font-weight: bold;
+            font-size: 20px;
+            letter-spacing: 1px;
+        }
+    }
+    .links{
+        width: 50%;
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10px;
+            @media (max-width: 768px) {
+                width: 100%;
+            }
+            li{
+                display: block;
+                transition: 0.3s;
+                .search-icon{
+                    width: 20px;
+                    cursor: pointer;
+                }
+            }
+            li:hover{
+                color: $textColor;
+            }
+        }
+    }
+}
+
+.active{
+    color: $textColor;
+}

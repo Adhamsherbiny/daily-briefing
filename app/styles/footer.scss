@@ -1,0 +1,58 @@
+$mainColor: royalblue;
+$mainBg: rgb(18, 24, 36);
+$textColor: white;
+// $mainBg: black;
+// $mainColor: #FFEC01;
+footer{
+    user-select: none;
+    width: 100%;
+    background-color: $mainBg;
+    color: $textColor;
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    .footer-head{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        p{
+            max-width: 600px;
+            font-size: 14px;
+        }
+    }
+    .footer-body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        ul{
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            li .links .icon{
+                width: 35px;
+                transition: 0.3s;
+                font-size: 25px;
+            }
+            li .links .icon:hover{
+                color: $mainColor;
+            }
+        }
+    }
+    .copyrights{
+        margin-top: 10px;
+        color: gray;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        p{
+            font-size: 14px;
+        }
+        span{
+            font-size: 10px;
+        }
+    }
+}

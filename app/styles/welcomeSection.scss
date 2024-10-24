@@ -1,0 +1,36 @@
+$mainColor: royalblue;
+$mainBg: white;
+$textColor: black;
+// $mainBg: black;
+// $mainColor: #FFEC01;
+
+.welcome-section {
+  user-select: none;
+  position: relative;
+  color: $mainColor;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  .welcome-message {
+    width: 310px;
+    padding: 0 5px;
+    margin: 10px;
+    padding: 10px;
+    color: $textColor;
+    .title {
+      color: $textColor;
+      font-weight: bold;
+      span {
+        color: $mainColor;
+      }
+    }
+    p {
+      color: $textColor;
+      text-wrap: wrap;
+      font-size: 14px;
+      border-radius: 4px;
+    }
+  }
+}
+

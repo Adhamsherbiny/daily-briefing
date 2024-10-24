@@ -1,0 +1,35 @@
+$mainColor: royalblue;
+$textColor: white;
+.news-widget{
+    user-select: none;
+    position: relative;
+    width: 290px;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 5px;
+    .pic{
+        width: 290px;
+        margin: auto;
+    }
+    .title{
+        p{
+            font-weight: bold;
+            font-size: 18px;
+        }
+    }
+    .read-more-div{
+        display: flex;
+        justify-content: space-between;
+        .read-more{
+            color: $mainColor;
+            text-decoration: underline;
+        }
+    }
+    .content{
+        font-size: 14px;
+    }
+    .date{
+            font-size: 12px;
+            color: black;
+    }
+}

@@ -1,0 +1,28 @@
+$mainColor: royalblue;
+$mainBg: white;
+$textColor: black;
+// $mainBg: black;
+// $mainColor: #FFEC01;
+
+.expolre{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    .expolre-head{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        p{
+            color: $mainColor;
+            font-weight: bold;
+            font-size: 35px;
+        }
+    }
+    .explore-body{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
